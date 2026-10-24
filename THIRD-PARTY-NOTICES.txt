@@ -1,0 +1,27 @@
+Quiet RDP third-party notices
+
+Quiet RDP uses FreeRDP 3.32.2 under Apache-2.0, FFmpeg decoder libraries under
+LGPL-2.1-or-later, and GTK/GLib and other shared libraries under their respective
+licenses. The application owner's binary license does not replace their terms.
+See licenses/ and runtime-manifest.json for exact packages and notices.
+
+The exact corresponding third-party sources and the build instructions are at:
+https://github.com/tom062119/quiet-rdp-download/releases/tag/v0.3.1
+Asset: quiet-rdp-0.3.1-third-party-sources.tar.gz
+This archive contains third-party library sources, not Quiet RDP business code.
+
+The bundled FFmpeg H.264 decoder and parser were built without --enable-gpl or
+--enable-nonfree and without source modifications. The complete configure and
+build commands are included as prepare-build.sh in the third-party archive.
+
+All bundled libraries are dynamically linked. In an installed session the
+program is under $XDG_RUNTIME_DIR/quiet-rdp-app/0.3.1-<package-id>/; portable
+archives use quiet-rdp-0.3.1-tails7-amd64/. With the app closed, a recipient may
+replace compatible shared libraries in lib/ and relaunch run.sh. There is no
+runtime signature restriction on replacement libraries. Modifying libraries
+and reverse engineering to debug such modifications are permitted as required
+by their licenses. The installer validates its original transport archive;
+that check does not prevent replacement in the installed lib/ directory.
+
+The application and this installer are not claimed to own third-party code.
+Each library's copyright holder is identified by its included license notice.
