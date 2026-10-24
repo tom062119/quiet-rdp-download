@@ -1,0 +1,36 @@
+Quiet RDP Binary Distribution License
+Copyright (c) 2026 Quiet RDP project owner. All rights reserved.
+
+This license applies only to the original Quiet RDP application and installer
+code owned by the project owner. It does not replace the licenses of any
+third-party software, libraries, artwork, or other third-party materials.
+
+Permission is granted to download, install, run, and redistribute unmodified
+Quiet RDP binary distribution files, provided this license and all applicable
+third-party notices accompany them. Access to the hosted service and remote
+computers requires authorization from their respective administrators.
+
+The original Quiet RDP source code is not distributed under this license.
+No right to obtain or publish that confidential source code is granted.
+No trademark rights or entitlement to hosted services are granted.
+
+Third-party components retain their own copyright and license terms. They
+include FreeRDP (Apache-2.0), FFmpeg (LGPL-2.1-or-later), GTK/GLib and other
+shared libraries. Their notices are included in licenses/ and their exact
+source packages and build instructions are provided separately at the download
+page identified in THIRD-PARTY-NOTICES.txt.
+
+Nothing in this license restricts rights granted by a third-party license,
+including modification or replacement of LGPL libraries, or reverse
+engineering for debugging modifications to those libraries. The application
+uses replaceable shared libraries; their paths and replacement instructions
+are documented in THIRD-PARTY-NOTICES.txt.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. TO THE EXTENT PERMITTED BY LAW, THE COPYRIGHT HOLDER IS NOT
+LIABLE FOR CLAIMS OR DAMAGES ARISING FROM THE SOFTWARE OR ITS USE.
+
+This license applies to distributions made under it. It does not revoke
+permissions already granted for copies previously distributed under another
+license. Mandatory rights under applicable law remain unaffected.
