@@ -21,21 +21,26 @@ versions, file hashes and source packages are recorded in runtime-manifest.json;
 their notices and corresponding source packages are also included.
 
 The exact corresponding third-party sources and the build instructions are at:
-https://github.com/tom062119/quiet-rdp-download/releases/tag/v0.6.0
-Asset: quiet-rdp-0.6.0-third-party-sources.tar.gz
+https://github.com/tom062119/quiet-rdp-download/releases/tag/v0.6.1
+Asset: quiet-rdp-0.6.1-third-party-sources.tar.gz
 This archive contains third-party component sources, not Quiet RDP business code.
 
 The bundled FFmpeg H.264 decoder and parser were built without --enable-gpl or
 --enable-nonfree and without source modifications. The complete configure and
 build commands are included as prepare-build.sh in the third-party archive.
 
-All bundled libraries are dynamically linked. Portable archives extract to
-quiet-rdp-0.6.0-tails7-amd64/. With the app closed, a recipient may replace
-compatible shared libraries in lib/ and relaunch Quiet-RDP or run.sh. There is no
-runtime signature restriction on replacement libraries. Modifying libraries
-and reverse engineering to debug such modifications are permitted as required
-by their licenses. Archive checksums do not prevent replacement in the
-extracted lib/ directory.
+All bundled libraries are dynamically linked. The public archive contains one
+native executable, Quiet-RDP. It can export its bundled files without starting
+the application: ./Quiet-RDP --extract /path/to/a/new-directory
+This explicit maintenance option creates only the named new directory; it
+does not overwrite an existing directory. Its contents include all license
+notices, runtime-manifest.json, bin/, lib/, ime/ and run.sh.
+With the app closed, a recipient may replace compatible shared libraries in
+the exported lib/ directory and run the exported run.sh. There is no runtime
+signature restriction on replacement libraries. Modifying libraries and
+reverse engineering to debug such modifications are permitted as required
+by their licenses. The outer payload checksum detects archive corruption;
+it does not prevent modifications to this exported runtime.
 
 The application and its portable launcher are not claimed to own third-party code.
 Each library's copyright holder is identified by its included license notice.
