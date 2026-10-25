@@ -21,8 +21,8 @@ versions, file hashes and source packages are recorded in runtime-manifest.json;
 their notices and corresponding source packages are also included.
 
 The exact corresponding third-party sources and the build instructions are at:
-https://github.com/tom062119/quiet-rdp-download/releases/tag/v0.4.1
-Asset: quiet-rdp-0.4.1-third-party-sources.tar.gz
+https://github.com/tom062119/quiet-rdp-download/releases/tag/v0.5.0
+Asset: quiet-rdp-0.5.0-third-party-sources.tar.gz
 This archive contains third-party component sources, not Quiet RDP business code.
 
 The bundled FFmpeg H.264 decoder and parser were built without --enable-gpl or
@@ -30,8 +30,8 @@ The bundled FFmpeg H.264 decoder and parser were built without --enable-gpl or
 build commands are included as prepare-build.sh in the third-party archive.
 
 All bundled libraries are dynamically linked. In an installed session the
-program is under $XDG_RUNTIME_DIR/quiet-rdp-app/0.4.1-<package-id>/; portable
-archives use quiet-rdp-0.4.1-tails7-amd64/. With the app closed, a recipient may
+program is under $XDG_RUNTIME_DIR/quiet-rdp-app/0.5.0-<package-id>/; portable
+archives use quiet-rdp-0.5.0-tails7-amd64/. With the app closed, a recipient may
 replace compatible shared libraries in lib/ and relaunch run.sh. There is no
 runtime signature restriction on replacement libraries. Modifying libraries
 and reverse engineering to debug such modifications are permitted as required
