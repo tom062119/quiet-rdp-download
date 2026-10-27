@@ -21,8 +21,8 @@ versions, file hashes and source packages are recorded in runtime-manifest.json;
 their notices and corresponding source packages are also included.
 
 The exact corresponding third-party sources and the build instructions are at:
-https://github.com/tom062119/quiet-rdp-download/releases/tag/v0.6.3
-Asset: quiet-rdp-0.6.3-third-party-sources.tar.gz
+https://github.com/tom062119/quiet-rdp-download/releases/tag/v0.6.4
+Asset: quiet-rdp-0.6.4-third-party-sources.tar.gz
 This archive contains third-party component sources, not Quiet RDP business code.
 
 The bundled FFmpeg H.264 decoder and parser were built without --enable-gpl or
